@@ -29,5 +29,6 @@ func main() {
 	//CreatedTest()
 	//TestFind()
 	//TestUpdate()
-	TestDelete()
+	//TestDelete()
+	TestRaw()
 }
