@@ -25,10 +25,11 @@ func main() {
 
 	GLOBLE_DB = db
 
-	TestUserCreate()
+	//TestUserCreate()
 	//CreatedTest()
 	//TestFind()
 	//TestUpdate()
 	//TestDelete()
-	TestRaw()
+	//TestRaw()
+	one2one()
 }
