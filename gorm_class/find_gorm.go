@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+type UserInfo struct {
+	Name string
+	Age  uint8
+}
 
 func TestFind() {
-	var result map[string]interface{}
-	GLOBLE_DB.Model(&TestUser{}).First(&result)
-	fmt.Println(result)
+	var User = []UserInfo{}
+	GLOBLE_DB.Model(&TestUser{}).Where("name <> ?", "L").Find(&User)
+	fmt.Println(User)
 }
