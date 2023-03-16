@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-
-	"gorm.io/gorm"
-)
-
 // belongs to
 // type Dog struct {
 // 	gorm.Model
@@ -20,17 +14,17 @@ import (
 // }
 
 // has one
-type Dog struct {
-	gorm.Model
-	Name      string
-	GirlGodID uint
-}
+// type Dog struct {
+// 	gorm.Model
+// 	Name      string
+// 	GirlGodID uint
+// }
 
-type GirlGod struct {
-	gorm.Model
-	Name string
-	Dog  Dog
-}
+// type GirlGod struct {
+// 	gorm.Model
+// 	Name string
+// 	Dog  Dog
+// }
 
 func one2one() {
 	//belongs to
@@ -68,7 +62,7 @@ func one2one() {
 	// }
 	// GLOBLE_DB.Create(&g) //注意，尽管grilgod内has a dog但是girlgod是不依赖dog而存在的，即girlgod内没有dog的字段
 	// GLOBLE_DB.AutoMigrate(&GirlGod{}, &Dog{})
-	var girl GirlGod
-	GLOBLE_DB.Preload("Dog").First(&girl, 1) // 预加载，查询girlgod时会带出她所拥有的dog. 在查dog时同样也可以预加载girlgod
-	fmt.Println(girl)
+	// var girl GirlGod
+	// GLOBLE_DB.Preload("Dog").First(&girl, 1) // 预加载，查询girlgod时会带出她所拥有的dog. 在查dog时同样也可以预加载girlgod
+	// fmt.Println(girl)
 }
