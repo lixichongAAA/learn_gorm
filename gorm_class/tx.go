@@ -44,6 +44,7 @@ func TestTranscaction() {
 	// tx.Commit()
 	// tx.Create(&TMG{Name: "ddd"}) //该语句不会被执行,且会报错
 
+	//savepoint rollbackto
 	GLOBLE_DB.AutoMigrate(&TMG{})
 	tx := GLOBLE_DB.Begin()
 	tx.Create(&TMG{Name: "111"})
