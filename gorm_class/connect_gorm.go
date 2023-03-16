@@ -33,7 +33,8 @@ func main() {
 	//TestRaw()
 	//one2one()
 	//one2many()
-	Many2Many()
+	//Many2Many()
 	//TestTranscaction()
 	//Custome()
+	Polymophic()
 }
