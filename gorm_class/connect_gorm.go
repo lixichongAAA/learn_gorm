@@ -32,6 +32,7 @@ func main() {
 	//TestDelete()
 	//TestRaw()
 	//one2one()
+	one2many()
 	//TestTranscaction()
-	Custome()
+	//Custome()
 }
