@@ -36,5 +36,5 @@ func main() {
 	//Many2Many()
 	//TestTranscaction()
 	//Custome()
-	Polymophic()
+	//Polymophic()
 }
